@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 499px) and (max-width: 980px){
+
+    body {
+        font-family: helvetica;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ancho{
+        margin: auto;
+        width: 960px;
+        /* border: 1px yellow solid; */
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .logo img{
+        max-width: 100px;
+    }
+
+    .menu{
+        width: 450px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .menu li{
+        display: flex;
+    }
+
+    .menu a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 10px;
+        color: white;
+        transition: all .5s;
+    }
+
+    .menu a:hover{
+        color: #333;
+    }
+
+    .banner{
+        background-image: url("../Imagenes/AAAABdUpg57rTLBwh5QlG50vyRWVQog58ctqk2iEM93j_CG9jhxU-dLv9gQTgzYiUZ3_21e4TbUbO7M1WyzACg0vRv_Fmrmc.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 520px;
+    }
+
+    .opciones-usuario{
+        width: 350px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .opciones-usuario li{
+        display: flex;
+    }
+
+    .opciones-usuario a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 15px;
+        color: white;
+        transition: all .5s;
+    }
+
+    .opciones-usuario a:hover{
+        color: #333;
+    }
+
+    .Synopsis p{
+        font-size: 15px;
+    }
+
+    .botones-peli a{
+        justify-content: center;
+        padding: 10px 20px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .reproducir{
+        width: 200px;
+        display: flex;
+        align-items: center;
+        color: black;
+        gap:10px;
+        text-decoration: none;
+        background-color: white;
+        border: 1px white solid;
+        border-radius: 10px;
+        transition: all .5s;
+    }
+
+    .mas-info{
+        width: 210px;
+        display: flex;
+        align-items: center;
+        color: white;
+        gap:10px;
+        text-decoration: none;
+        border-radius: 15px;
+        background-color: gray;
+        transition: all .5s;
+    }
+
+    .imagenes-seccion{
+        display: grid;
+        grid-template: auto / repeat(4,1fr);
+    }
+
+    .imagen-pelis{
+        width: 230px;
+        height: 150px;
+    }
+
+    .ultima_imagen{
+        display: none;
+    }
+
+    #menuMobil{
+        display: none;
+    }
+
+    #iconomenu{
+        display: none;
+    }
+}

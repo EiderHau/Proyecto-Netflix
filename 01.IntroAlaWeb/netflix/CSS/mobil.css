@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px){
+    body {
+        font-family: helvetica;
+        font-size: 12px;
+        color: #333;
+    }
+
+    .ancho{
+        margin: auto;
+        width: 470px;
+        /* border: 1px blue solid; */
+    }
+
+    .mobil-ultima{
+        display: none;
+    }
+
+    .opciones-footer{
+        display: grid;
+        grid-template: auto / repeat(2,1fr);
+    }
+
+    .imagenes-seccion{
+        display: grid;
+        grid-template: auto / repeat(5,1fr);
+        gap: 20px;
+    }
+
+    .imagen-pelis{
+        width: 220px;
+        height: 130px;
+    }
+
+    .info-imagen{
+        width: 220px;
+        height: 170px;
+        display: inline-block;
+        justify-content: center;
+        background-color: #232323;
+    }
+
+    .titulo-peli img{
+        width: 200px;
+    }
+
+    .Synopsis{
+        width: 200px;
+        color: white;
+    }
+
+    .Synopsis p{
+        font-size: 12px;
+    }
+
+    .reproducir , .mas-info{
+        width: 150px;
+    }
+
+    .reproducir p, .mas-info p{
+        font-size: 12px;
+    }
+
+    .mas-info i{
+        border: 5px white solid;
+        border-radius: 100%;
+        padding: 3px 8px;
+        font-size: 12px;
+    }
+
+    .reproducir i{
+        font-size: 25px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .opciones-usuario{
+        width: 250px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .fa-search{
+        display: none;
+    }
+
+    .banner{
+        background-image: url("../Imagenes/AAAABdUpg57rTLBwh5QlG50vyRWVQog58ctqk2iEM93j_CG9jhxU-dLv9gQTgzYiUZ3_21e4TbUbO7M1WyzACg0vRv_Fmrmc.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 390px;
+    }
+
+    #menuMobil{
+        display: none;
+    }
+
+    .menuMovil{
+        top: 40px;
+        left: 80px;
+        position: absolute;
+        width: 150px;
+        background-color: #232323;
+    }
+
+    .menuMovil li{
+        list-style: none;
+        border-bottom: 1px white solid;
+    }
+
+    .menuMovil a{
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .boton-menu{
+        display: flex;
+        gap: 10px;
+    }
+
+    .boton-menu a{
+        display: inline-block;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    #menuMobil{
+        display: none;
+    }
+
+    #iconomenu{
+        display: block;
+    }
+}

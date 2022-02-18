@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1600px){
+
+    body {
+        font-family: helvetica;
+        font-size: 16px;
+        color: #333;
+        background-color: #141414;
+    }
+
+    .ancho{
+        margin: auto;
+        width: 1200px;
+        /* border: 1px red solid; */
+    }
+
+    .nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    .abajo{
+        background-color: #141414;
+    }
+
+    .cabezera-menu{
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        transition: all .7s;
+    }
+
+    .posisionmenu{
+        display: flex;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .logo img{
+        max-width: 100px;
+    }
+
+    .menu{
+        width: 600px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .menu li{
+        display: flex;
+    }
+
+    .menu a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 15px;
+        color: white;
+        transition: all .5s;
+    }
+
+    .menu a:hover{
+        color: #333;
+    }
+
+    .opciones-usuario{
+        width: 500px;
+        display: flex;
+        justify-content: end;
+    }
+
+    .opciones-usuario li{
+        display: flex;
+    }
+
+    .opciones-usuario a{
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 15px;
+        color: white;
+        transition: all .5s;
+    }
+
+    .opciones-usuario a:hover{
+        color: #333;
+    }
+
+    .banner{
+        background-image: url("../Imagenes/AAAABdUpg57rTLBwh5QlG50vyRWVQog58ctqk2iEM93j_CG9jhxU-dLv9gQTgzYiUZ3_21e4TbUbO7M1WyzACg0vRv_Fmrmc.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 570px;
+    }
+
+    .espacio{
+        height: 100px;
+    }
+
+    .titulo-peli img{
+        width: 550px;
+    }
+
+    .Synopsis{
+        width: 500px;
+        color: white;
+    }
+
+    .Synopsis p{
+        font-size: 20px;
+    }
+
+    .botones-peli
+    {
+        display: flex;
+        gap: 50px;
+    }
+
+    .botones-peli a{
+        justify-content: center;
+        padding: 10px 20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .reproducir{
+        width: 250px;
+        display: flex;
+        align-items: center;
+        color: black;
+        gap:10px;
+        text-decoration: none;
+        background-color: white;
+        border: 1px white solid;
+        border-radius: 10px;
+        transition: all .5s;
+    }
+
+    .reproducir i{
+        font-size: 35px;
+    }
+
+    .reproducir:hover{
+        background-color: gray;
+        border: 1px gray solid;
+    }
+
+    .mas-info{
+        width: 250px;
+        display: flex;
+        align-items: center;
+        color: white;
+        gap:10px;
+        text-decoration: none;
+        border-radius: 15px;
+        background-color: gray;
+        transition: all .5s;
+    }
+
+    .mas-info i{
+        border: 5px white solid;
+        border-radius: 100%;
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+
+    .mas-info:hover{
+        background-color: rgba(106, 102, 102, .7);
+        border: none;
+    }
+
+    .filtro{
+        height: 35px;
+        background: rgb(21,21,21);
+        background: linear-gradient(0deg, rgba(21,21,21,1) 30%, rgba(21,21,21,0) 100%);
+    }
+
+    .titulo-seccion{
+        display: flex;
+        align-items: center;
+    }
+
+    .subtitulo{
+        color: white;
+        padding: .5px 20px;
+    }
+
+    .titulo-seccion h4{
+        padding: 10px 20px;
+        color: white;
+        transition: all .5s;
+        cursor: pointer;
+    }
+
+    .explorar{
+        display: none;
+        color: white;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    .titulo-seccion:hover .explorar{
+        display: flex;
+    }
+
+    .imagenes-seccion{
+        display: grid;
+        grid-template: auto / repeat(5,1fr);
+    }
+
+    .imagen-pelis{
+        width: 230px;
+        height: 150px;
+    }
+
+    .imagen-pelis img{
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .info-imagen{
+        width: 230px;
+        height: 170px;
+        display: inline-block;
+        justify-content: center;
+        background-color: #232323;
+    }
+
+    .sello-editorial{
+        margin-top: 10px;
+        margin-left: 30px;
+        max-width: 60%;
+        display:  flex;
+        color: white;
+        gap: 5px;
+        padding: 10px;
+        background-color: #4F4F4F;
+        border-radius: 30px;
+        font-size: 13px;
+        justify-content: center;
+    }
+
+    .texto-info{
+        color: white;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .sociales{
+        display: flex;
+    }
+
+    .sociales li{
+        list-style: none;
+    }
+
+    .sociales a{
+        display: inline-block;
+        color: white;
+        text-decoration:  none;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .opciones-footer{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .opciones-footer-botones li{
+        list-style: none;
+    }
+
+    .opciones-footer-botones a{
+        display: inline-block;
+        color: #4F4F4F;
+        text-decoration: none;
+        transition: all .5s;
+        padding-bottom: 15px;
+    }
+
+    .opciones-footer-botones a:hover{
+        text-decoration: underline;
+    }
+
+    .boton-footer{
+        display: inline-block;
+        padding: 10px 20px;
+        border: 1px #4F4F4F solid;
+        color: #4F4F4F;
+        text-decoration: none;
+        transition: all .5s;
+    }
+
+    .boton-footer:hover{
+        color: white;
+    }
+
+    .texto-final{
+        display: flex;
+        gap: 10px;
+        font-size: 12px;
+        color: #4F4F4F;
+    }
+
+    #menuMobil{
+        display: none;
+    }
+
+    #iconomenu{
+        display: none;
+    }
+
+}
